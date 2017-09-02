@@ -4,8 +4,8 @@
 (ns clojure-noob.core
   (:gen-class))
 
-
-;example of map, get, get-in, vectors
+;map are a key value pair of data {:a 2 :b (1) } or { :a {:b ( + 1 2 3) }}
+;example of map, get, get-in
 
 (get {:a 2} :a)
 ;2
@@ -21,3 +21,13 @@
 
 ({:name (str "I am the best ever at clojur")} :name)
 ;I am the best ever at clojur
+
+(defn map
+  []
+  (get {:a 10} :a))
+;(map)
+
+(defn map2
+  [map]
+  (get map :a))
+;(map2 {:a 2})
